@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: radial-gradient(rgba(53, 82, 66, 0.5), rgba(47,80,63,0.6)), url(./Imagenes/Newyork.jpg);
+    background-position: center;
+}
+    
+
+.principal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-family: 'Chivo', sans-serif;
+    font-weight: 800px;
+}
+p{
+    font-family: 'Chivo', sans-serif;
+    
+}
+.botones{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+button{
+    border: black 2px solid;
+    margin: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+button:hover{
+    background-color: rgb(40, 80, 70);
+}
