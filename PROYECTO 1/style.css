@@ -5,17 +5,13 @@ body{
     background-image: radial-gradient(rgba(53, 82, 66, 0.5), rgba(47,80,63,0.6)), url(./Imagenes/Newyork.jpg);
     background-position: center;
 }
-    
-
 .principal{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-
 h1{
     font-family: 'Chivo', sans-serif;
     font-weight: 800px;
@@ -26,6 +22,7 @@ p{
 }
 h1,p{
     margin-bottom: 10px;
+    margin-left: 40px;
     animation-name: trasladar;
     animation-duration: 2s;
 }
@@ -39,13 +36,23 @@ h1,p{
 }
 .botones{
     display: flex;
-    gap: 10px;
-    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
 }
-button{
+.boton1{
     border: black 2px solid;
     margin: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background: transparent;
+    letter-spacing: 1px;
+    animation-name: click;
+    animation-duration: 2s;  
+}
+.boton2{
+    border: black 2px solid;
+    margin: 10px;
     width: 100px;
     padding: 10px;
     border-radius: 50px;
@@ -53,6 +60,11 @@ button{
     letter-spacing: 1px;
     animation-name: click;
     animation-duration: 2s;
+}
+a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
 }
 @keyframes click{
     0%{
@@ -62,6 +74,9 @@ button{
         transform: scale(1);
     }
 }
-button:hover{
+.boton1:hover{
+    background-color: rgb(40, 80, 70);
+}
+.boton2:hover{
     background-color: rgb(40, 80, 70);
 }
