@@ -38,6 +38,8 @@ h1,p{
     display: flex;
     flex-direction: row;
     list-style: none;
+    width: 100vh;
+    justify-content: center;
 }
 .boton1{
     border: black 2px solid;
@@ -79,4 +81,18 @@ a{
 }
 .boton2:hover{
     background-color: rgb(40, 80, 70);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    border: black 2px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    margin: 10px;
 }

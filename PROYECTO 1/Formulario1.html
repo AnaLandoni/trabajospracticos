@@ -9,14 +9,18 @@
 </head>
 <body>
     <form action="analauralandoni@hotmail.com" method="get">
-        <label for="usuario">Name</label>
-        <input type="text" name="usuario" id="usuario">
+        <label for="nombre">Name</label>
+        <input type="text" name="nombre" id="nombre" required>
         <label for="apellido">Surname</label>
-        <input type="text" name="apellido" id="apellido">
+        <input type="text" name="apellido" id="apellido" required>
         <label for="correo">Adress</label>
-        <input type="email" name="adress" id="correo" >
+        <input type="email" name="adress" id="correo" required>
+        <label for="usuario">Username</label>
+        <input type="text" name="usuario" id="usuario" required>
         <label for="contraseña">Password</label>
-        <input type="password" name="contraseña" id="contraseña">
+        <input type="password" name="contraseña" id="contraseña" required>
+        <label for="enviar">Sent</label>
+        <input type="submit" name="enviar" id="enviar">
     </form>
 </body>
 </html>
