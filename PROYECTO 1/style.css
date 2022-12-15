@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 body{
     background-image: radial-gradient(rgba(53, 82, 66, 0.5), rgba(47,80,63,0.6)), url(./Imagenes/Newyork.jpg);
@@ -22,7 +23,6 @@ p{
 }
 h1,p{
     margin-bottom: 10px;
-    margin-left: 40px;
     animation-name: trasladar;
     animation-duration: 2s;
 }
@@ -41,7 +41,7 @@ h1,p{
     width: 100vh;
     justify-content: center;
 }
-.boton1{
+button{
     border: black 2px solid;
     margin: 10px;
     width: 100px;
@@ -51,23 +51,10 @@ h1,p{
     letter-spacing: 1px;
     animation-name: click;
     animation-duration: 2s;  
-}
-.boton2{
-    border: black 2px solid;
-    margin: 10px;
-    width: 100px;
-    padding: 10px;
-    border-radius: 50px;
-    background: transparent;
-    letter-spacing: 1px;
-    animation-name: click;
-    animation-duration: 2s;
-}
-a{
-    text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black;
 }
+
 @keyframes click{
     0%{
         transform: scale(0);
@@ -76,12 +63,10 @@ a{
         transform: scale(1);
     }
 }
-.boton1:hover{
-    background-color: rgb(40, 80, 70);
+button:hover{
+    background-color: rgba(72, 109, 100, 0.8);
 }
-.boton2:hover{
-    background-color: rgb(40, 80, 70);
-}
+
 form{
     display: flex;
     flex-direction: column;
@@ -95,4 +80,8 @@ input{
     border-radius: 8px;
     background-color: transparent;
     margin: 10px;
+    padding: 5px;
+}
+.en:hover{
+    background-color: rgba(72, 109, 100, 0.8);
 }
